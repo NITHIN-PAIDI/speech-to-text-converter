@@ -6,16 +6,15 @@ import TextToSpeech from './components/text-to-speech';
 
 function App() {
   return (
-    <Router>
-      <div className='App-container'>
-        <Routes>
-          <Route path = "/" element = {<Home/>}/>
-          <Route path = "/sign-in" element = {<Login/>}/>
-          <Route path="/speech-to-text" element={<TextToSpeech />} />
-
-        </Routes>
-      </div>
-    </Router>
+    <Router basename="/speech-to-text-converter">
+    <div className='App-container'>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/sign-in" element={<Login/>}/>
+        <Route path="/speech-to-text" element={<TextToSpeech />} />
+      </Routes>
+    </div>
+  </Router>
  
  
   );
