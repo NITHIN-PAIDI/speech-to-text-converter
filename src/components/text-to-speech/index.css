@@ -1,0 +1,267 @@
+.speech-container {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 2rem;
+    font-family: 'Inter';
+  }
+  
+  .speech-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Inter';
+  }
+  
+  .speech-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter';
+  }
+  
+  .subtitle {
+    color: #7f8c8d;
+    font-family: 'Inter';
+    font-size: 1.1rem;
+  }
+  
+  .main-content {
+    font-family: 'Inter';
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .control-panel {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    font-family: 'Inter';
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .title-input {
+    font-family: 'Inter';
+    flex: 3;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .title-input:focus {
+    font-family: 'Inter';
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .category-select {
+    font-family: 'Inter';
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .button-group {
+    font-family: 'Inter';
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .record-button, .save-button {
+    font-family: 'Inter';
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .record-button {
+    font-family: 'Inter';
+    background: #3498db;
+    color: white;
+    flex: 1;
+  }
+  
+  .record-button.recording {
+    font-family: 'Inter';
+    background: #e74c3c;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .record-icon {
+    font-family: 'Inter';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  .save-button {
+    font-family: 'Inter';
+    background: #2ecc71;
+    color: white;
+    flex: 1;
+  }
+  
+  .save-button:disabled {
+    font-family: 'Inter';
+    font-family: 'Inter';
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .transcript-section {
+    font-family: 'Inter';
+    margin-bottom: 2rem;
+  }
+  
+  .transcript-box textarea {
+    font-family: 'Inter';
+    width: 96%;
+    min-height: 200px;
+    padding: 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-panel {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stats-toggle {
+    font-family: 'Inter';
+    background: none;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .stats {
+    font-family: 'Inter';
+    display: flex;
+    gap: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .saved-notes h3 {
+    font-family: 'Inter';
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .notes-grid {
+    font-family: 'Inter';
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 1.5rem;
+    
+  }
+  
+  .note-card {
+    font-family: 'Inter';
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .note-card:hover {
+    font-family: 'Inter';
+    transform: translateY(-5px);
+  }
+  
+  .note-header {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .category-tag {
+    font-family: 'Inter';
+    background: #3498db;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .note-footer {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .delete-button {
+    font-family: 'Inter';
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    font-family: 'Inter';
+    background: #c0392b;
+  }
+  
+  @keyframes pulse {
+    
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  @media (max-width: 768px) {
+    
+    .control-panel {
+        font-family: 'Inter';
+      flex-direction: column;
+    }
+    
+    .input-group {
+        font-family: 'Inter';
+      flex-direction: column;
+    }
+    
+    .button-group {
+        font-family: 'Inter';
+      flex-direction: column;
+    }
+  }
+  
